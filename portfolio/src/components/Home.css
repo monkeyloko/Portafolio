@@ -1,0 +1,21 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    border: solid black;
+   }
+    .card {
+     border: solid rgb(182, 39, 39);
+      background-color: black;
+      border: 2px solid white;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      top: -100px; 
+      width: 60%;
+      color: white;
+      height: 40%;
+    }
+ 
