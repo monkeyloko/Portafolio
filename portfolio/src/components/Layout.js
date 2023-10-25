@@ -12,6 +12,21 @@ const Layout = () => {
                             Home
                         </Link>
                     </li>
+                    <li className="navbar-item">
+                        <Link to="/info" className="navbar-link">
+                            Info
+                        </Link>
+                    </li>
+                    <li className="navbar-item">
+                        <Link to="/creaciones" className="navbar-link">
+                            Mis Creaciones
+                        </Link>
+                    </li>
+                    <li className="navbar-item">
+                        <Link to="/favs" className="navbar-link">
+                            Favoritos
+                        </Link>
+                    </li>
                 </ul>
             </nav>
 
