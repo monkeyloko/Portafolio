@@ -13,9 +13,9 @@ const Home = () => {
     return (
       <div className="home">
         <div class="card">
-    <p class="heading">
-      Mi portafolio
-    </p>
+    <h1 class="heading">
+      Santiago Doff</h1>
+      
    <p>
       Hecho por
     </p>
