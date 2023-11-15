@@ -11,17 +11,16 @@ const obj = {
 const Home = () => {
 
     return (
+      <>      
       <div className="home">
         <div class="card">
     <h1 class="heading">
       Santiago Doff</h1>
-      
-   <p>
-      Hecho por
-    </p>
-   <p>Santiago Doff
-  </p></div>
       </div>
+      </div>
+      <div className='home2' ></div>
+      </>
+
     );
   };
   

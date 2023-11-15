@@ -3,7 +3,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh; 
+      height: 80.5vh; 
+      border: solid black;
+    }
+    .home2 {
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 92.5vh; 
       border: solid black;
     }
       .card {
@@ -62,7 +70,7 @@
       
       
       .heading {
-        font-size: 100px;
+        font-size: 50px;
         text-transform: capitalize;
         font-weight: 700;
       }
