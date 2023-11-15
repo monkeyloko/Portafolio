@@ -1,5 +1,6 @@
 import React from 'react';  
 import "./Creaciones.css"
+import CreacionesJSON from './CreacionesJSON';
 
 const Creaciones = () => {
     return (
