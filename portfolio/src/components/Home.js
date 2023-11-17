@@ -14,16 +14,17 @@ const Home = () => {
       <>      
       <div className="home">
         <div class="card">
-    <h1 class="heading">
-      Santiago Doff</h1>
-      </div>
+          <h1 class="heading">
+            Santiago Doff
+          </h1>
+          <p class="subheading">Desarrollador Front-end</p>
+        </div>
       </div>
       <div className='home2' ></div>
+      <div className='home3' ></div>
       </>
 
     );
   };
   
-
-
 export default Home;
