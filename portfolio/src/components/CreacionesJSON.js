@@ -26,7 +26,7 @@ const CreacionesJSON = [
   {
     "titulo": "Catálogo React",
     "foto": "/catalogo.jpg",
-    "descripcion": "Catálogo de productos en React con Context API. Visualiza, busca y agrega productos al carrito.",
+    "descripcion": "Catálogo de productos en React con Context API. Visualiza, busca y filtra productos.",
     "link": "github.com/monkeyloko/catalogo-productos"
   },
   {

@@ -16,6 +16,7 @@ const Home = () => {
         </div>
       </div>
       <div className='home2'>
+        <h1>Algunas de mis Creaciones</h1> {/* Encabezado para la sección de creaciones */}
         {primerasTresCreaciones.map((creacion) => (
           <div key={creacion.titulo} className="card">
             <img src={creacion.foto} alt={creacion.titulo} />
