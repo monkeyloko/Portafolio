@@ -1,6 +1,8 @@
 import ReactDOM from "react-dom/client";
 import Home from './components/Home';
 import Favoritos from "./components/Favoritos";
+import { CreacionesProvider } from './contextState.js';
+
 
 import Layout from './components/Layout';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -12,6 +14,7 @@ import Info from "./components/Info";
 
 function App() {
   return (
+    <CreacionesProvider>
      <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -22,6 +25,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    </CreacionesProvider>
   );
 }
 
