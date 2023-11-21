@@ -19,19 +19,19 @@ const CreacionesJSON = [
   },
   {
     "titulo": "Banderas",
-    "foto": "/pizza.jpg",
+    "foto": "/banderas.jpg",
     "descripcion": "App interactiva para explorar y aprender sobre banderas de países.",
     "link": "github.com/monkeyloko/banderas-app"
   },
   {
     "titulo": "Catálogo React",
-    "foto": "/pizza.jpg",
+    "foto": "/catalogo.jpg",
     "descripcion": "Catálogo de productos en React con Context API. Visualiza, busca y agrega productos al carrito.",
     "link": "github.com/monkeyloko/catalogo-productos"
   },
   {
     "titulo": "TP Personajes",
-    "foto": "/pizza.jpg",
+    "foto": "/personajes.webp",
     "descripcion": "API para manejar información de personajes. Estructura robusta para datos de personajes.",
     "link": "github.com/monkeyloko/tp-personajes-api"
   }
