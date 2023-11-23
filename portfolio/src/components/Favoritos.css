@@ -1,6 +1,6 @@
-/* Creaciones.css */
+/* Favoritos.css */
 
-.bodyCreaciones {
+.favoritos-container {
     font-family: 'Arial', sans-serif;
     margin: auto;
     padding: 2%;
@@ -10,67 +10,66 @@
     background-color: #f4f4f4;
 }
 
-
-.title-divider {
-    width: 50px;
-    height: 2px;
-    background-color: #333;
-    margin: 15px 0;
+.favoritos-title {
+    color: #333;
+    margin-top: -22px;
+    font-size: 24px;
 }
 
-.creaciones-row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.favoritos-empty {
+    color: #666;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.creaciones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    /* Espacio entre las tarjetas */
+    justify-content: center;
 }
 
-.creaciones-column {
-    flex: 1 0 300px;
-    /* Ancho de las columnas y límite mínimo/máximo */
-}
-
-.creaciones-card {
+.creacion-favorita {
+    width: 100%;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
     background-color: #fff;
-    /* Fondo blanco para las tarjetas */
+    margin-bottom: 20px;
 }
 
-.creaciones-card:hover {
-    transform: scale(1.01);
+.creacion-favorita:hover {
+    transform: scale(1.05);
 }
 
-.creaciones-card-img {
+.creacion-favorita-img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
 }
 
-.creaciones-card-content {
+.creacion-favorita-content {
     padding: 16px;
 }
 
-.creaciones-card-title {
+.creacion-favorita-title {
     font-size: 20px;
     color: #333;
     margin-bottom: 8px;
     text-align: center;
 }
 
-.creaciones-card-description {
+.creacion-favorita-description {
     font-size: 14px;
     color: #666;
     margin-bottom: 16px;
     text-align: center;
 }
 
-.creaciones-card-link {
+.creacion-favorita-link {
     display: block;
     color: #007bff;
     font-size: 14px;

@@ -4,15 +4,16 @@ import CreacionesJSON from './components/CreacionesJSON';
 
 const CreacionesContext = createContext();
 
-export const CreacionesProvider= ({ children })=> {
+export const CreacionesProvider = ({ children }) => {
     const [creaciones, setCreaciones] = useState([]);
+    const [favoritos, setFavoritos] = useState([]);
 
 
 
 
     useEffect(() => {
-            setCreaciones(CreacionesJSON)
-       
+        setCreaciones(CreacionesJSON)
+
         /*async function fetchCreaciones() {
             try {
                 const response = await axios.get('/components/CreacionesJSON.js');
@@ -23,16 +24,24 @@ export const CreacionesProvider= ({ children })=> {
         }
         fetchCreaciones();*/
     }, []);
+    const toggleFavorito = (titulo) => {
+        if (favoritos.includes(titulo)) {
+            setFavoritos(favoritos.filter((item) => item !== titulo));
+        } else {
+            setFavoritos([...favoritos, titulo]);
+        }
+    };
 
-    
+
+
 
     return (
-        <CreacionesContext.Provider value={{ creaciones }}>
+        <CreacionesContext.Provider value={{ creaciones, favoritos, toggleFavorito }}>
             {children}
         </CreacionesContext.Provider>
     );
 }
 
-export const useCreacionesContext = ()=> {
+export const useCreacionesContext = () => {
     return useContext(CreacionesContext);
 }

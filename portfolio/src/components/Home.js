@@ -1,5 +1,6 @@
 import React from 'react';
 import { useCreacionesContext } from '../contextState';
+import './Home.css'
 
 const Home = () => {
   const { creaciones } = useCreacionesContext();
