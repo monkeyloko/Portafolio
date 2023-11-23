@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
 import "./Layout.css"; // Asegúrate de crear un archivo Layout.css para los estilos.
+import Footer from "./Footer";
 
 const Layout = () => {
     return (
@@ -31,6 +32,7 @@ const Layout = () => {
             </nav>
 
             <Outlet />
+            <Footer />
         </>
     );
 };
