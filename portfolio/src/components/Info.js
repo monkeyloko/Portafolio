@@ -1,7 +1,7 @@
 import React from 'react';
 import Divider from '@mui/material/Divider';
 
-import './Info.css'; // Asegúrate de tener el archivo CSS correspondiente
+import './Info.css';
 
 const Info = () => {
   return (
