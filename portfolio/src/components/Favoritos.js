@@ -6,7 +6,6 @@ import './Favoritos.css';
 const Favoritos = () => {
   const { creaciones, favoritos } = useCreacionesContext();
 
-  // Filtra las creaciones que son favoritas
   const favoritosData = creaciones.filter(creacion => favoritos.includes(creacion.id));
 
   return (

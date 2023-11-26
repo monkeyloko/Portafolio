@@ -1,5 +1,3 @@
-/* Info.css */
-
 .info-container {
     display: flex;
     flex-direction: column;
@@ -7,7 +5,7 @@
     padding: 20px;
     height: 100%;
     margin: 7%;
-    /* Ajustado a altura completa */
+
 }
 
 .title-divider {
@@ -24,9 +22,8 @@
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    /* Ajusta según sea necesario */
     margin-bottom: 40px;
-    /* Espacio adicional entre las secciones */
+
 }
 
 .fotoContainer {
@@ -42,8 +39,6 @@
     text-align: center;
 }
 
-/* Eliminada la regla para la foto de perfil */
-
 .info-right {
     flex: 2;
 }
@@ -51,9 +46,7 @@
 .info-right p {
     font-size: 24px;
     line-height: 1.6;
-    /* Ajustado a un interlineado más amplio */
     color: #666;
-    /* Texto gris para mayor legibilidad */
 }
 
 .tech-stack {
@@ -63,7 +56,6 @@
 .tech-stack h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    /* Tamaño aumentado y margen aumentado para más presencia */
 }
 
 .tech-stack ul {
@@ -74,5 +66,4 @@
 .tech-stack li {
     font-size: 24px;
     margin-bottom: 15px;
-    /* Tamaño aumentado y margen aumentado para más presencia */
 }

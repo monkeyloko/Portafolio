@@ -6,10 +6,9 @@ import { useCreacionesContext } from '../contextState';
 const Creaciones = () => {
     const { creaciones } = useCreacionesContext();
 
-    // Verificar si creaciones es un array antes de mapearlo
     if (!Array.isArray(creaciones)) {
         console.error('Los datos de creaciones no son un array:', creaciones);
-        return null; // O algún componente de carga o mensaje de error
+        return null;
     }
 
     return (

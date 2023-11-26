@@ -4,13 +4,12 @@ import MailIcon from '@mui/icons-material/Mail';
 
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
-import { useCreacionesContext } from '../contextState'; // Importa el contexto
-import "./Layout.css"; // Asegúrate de crear un archivo Layout.css para los estilos.
+import { useCreacionesContext } from '../contextState';
+import "./Layout.css";
 import Footer from "./Footer";
 
 const Layout = () => {
-    const { favoritos } = useCreacionesContext(); // Obtiene la lista de favoritos
-
+    const { favoritos } = useCreacionesContext();
     return (
         <>
             <nav className="navbar">

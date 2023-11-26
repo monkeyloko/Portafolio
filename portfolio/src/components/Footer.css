@@ -1,19 +1,13 @@
-/* Footer.css */
-
 .footer {
     background-color: #212529;
-    /* Color de fondo negro */
     color: #ffffff;
-    /* Texto blanco */
 }
 
 .footer a {
     color: #fff;
-    /* Enlaces en texto blanco */
 }
 
 .footer .copyright {
     background-color: rgba(0, 0, 0, 0.05);
     color: white;
-    /* Color de fondo del área de derechos de autor */
 }

@@ -80,7 +80,6 @@
   scale: 101%;
 }
 
-/* Estilos para cada tarjeta de creación */
 .home2 {
   display: flex;
   flex-wrap: wrap;
@@ -115,13 +114,13 @@
 .card-content {
   padding: 16px;
   background-color: #fff;
-  /* Fondo blanco para el contenido */
+
 }
 
 .card h2 {
   font-size: 20px;
   color: #333;
-  /* Color del texto */
+
   margin-bottom: 8px;
   text-align: center;
 }
