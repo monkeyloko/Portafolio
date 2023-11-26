@@ -1,9 +1,15 @@
+// Footer.js
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Footer.css';
+import Contacto from './Contacto';
+
 const Footer = () => {
     return (
-        <footer className="bg-body-tertiary text-center">
+        <footer className="footer">
             <div className="container p-4 pb-0">
+                <Contacto />
                 <section className="mb-4">
                     <a
                         className="btn text-white btn-floating m-1"
@@ -61,8 +67,8 @@ const Footer = () => {
                 </section>
             </div>
 
-            <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-                © 2023 Copyright: <a className="text-body" href="https://github.com/monkeyloko/">github/monkeyloko/</a>
+            <div className="text-center p-3 copyright">
+                © 2023 Copyright: Santiago Doff
             </div>
         </footer>
     );

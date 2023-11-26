@@ -1,42 +1,52 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import axios from 'axios';
-import CreacionesJSON from './components/CreacionesJSON';
+
 
 const CreacionesContext = createContext();
 
 export const CreacionesProvider = ({ children }) => {
     const [creaciones, setCreaciones] = useState([]);
-    const [favoritos, setFavoritos] = useState([]);
-
+    const [favoritos, setFavoritos] = useState(() => {
+        const storedFavoritos = localStorage.getItem('favoritos');
+        return storedFavoritos ? JSON.parse(storedFavoritos) : [];
+    });
 
 
 
     useEffect(() => {
-        setCreaciones(CreacionesJSON)
-
-        /*async function fetchCreaciones() {
-            try {
-                const response = await axios.get('/components/CreacionesJSON.js');
+        axios.get('CreacionesJSON.json')
+            .then(response => {
                 setCreaciones(response.data);
-            } catch (error) {
-                console.error('Error', error);
-            }
-        }
-        fetchCreaciones();*/
+            })
+            .catch(err => console.log(err));
     }, []);
-    const toggleFavorito = (titulo) => {
-        if (favoritos.includes(titulo)) {
-            setFavoritos(favoritos.filter((item) => item !== titulo));
-        } else {
-            setFavoritos([...favoritos, titulo]);
-        }
+
+
+    useEffect(() => {
+        localStorage.setItem('favoritos', JSON.stringify(favoritos));
+    }, [favoritos]);
+
+    const añadirFav = (creacionId) => {
+        setFavoritos((prevFavoritos) => {
+            if (!prevFavoritos.includes(creacionId)) {
+                return [...prevFavoritos, creacionId];
+            }
+            return prevFavoritos;
+        });
     };
+
+    const borrarFav = (creacionId) => {
+        setFavoritos((prevFavoritos) => prevFavoritos.filter((id) => id !== creacionId));
+    };
+
+    const isFavorite = (creacionId) => favoritos.includes(creacionId);
+
 
 
 
 
     return (
-        <CreacionesContext.Provider value={{ creaciones, favoritos, toggleFavorito }}>
+        <CreacionesContext.Provider value={{ creaciones, favoritos, añadirFav, borrarFav, isFavorite }}>
             {children}
         </CreacionesContext.Provider>
     );

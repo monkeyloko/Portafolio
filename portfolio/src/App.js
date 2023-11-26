@@ -11,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Creaciones from "./components/Creaciones";
 import Info from "./components/Info";
+import DetalleCreacion from './components/DetalleCreacion'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="favs" element={<Favoritos />} />
             <Route path="creaciones" element={<Creaciones />} />
             <Route path="info" element={<Info />} />
+            <Route path='creaciones/detalle/:id' element={<DetalleCreacion />} />
           </Route>
         </Routes>
       </BrowserRouter>

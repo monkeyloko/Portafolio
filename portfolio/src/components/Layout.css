@@ -1,7 +1,7 @@
 /* Layout.css */
 
 .navbar {
-    background: black;
+    background-color: rgb(25, 25, 25);
     padding: 10px 0;
     text-align: center;
 
@@ -29,4 +29,9 @@
 
 .navbar-link:hover {
     color: greenyellow;
+}
+
+.espacio {
+    margin-right: 11px;
+    height: 20px;
 }
