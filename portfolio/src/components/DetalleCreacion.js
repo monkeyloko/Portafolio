@@ -29,7 +29,7 @@ const DetalleCreacion = () => {
                 <a href={creacion.link} target="_blank" rel="noopener noreferrer" className="detalle-creacion-link">
                     Ver en GitHub
                 </a>
-                <button onClick={handleToggleFavorito}>
+                <button onClick={handleToggleFavorito} className="detalle-creacion-button">
                     {isFavorite(creacion.id) ? 'Quitar de Favoritos' : 'Agregar a Favoritos'}
                 </button>
             </div>

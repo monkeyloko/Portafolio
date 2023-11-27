@@ -8,7 +8,7 @@ const Info = () => {
     <div className="info-container">
       <div className="info-content">
         <div className="info-left">
-          <h1>Hola, soy Santiago!</h1>
+          <h1>Hola! soy Santiago Doff.</h1>
         </div>
         <div className="info-right">
           <p>

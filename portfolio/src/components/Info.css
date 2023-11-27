@@ -1,3 +1,5 @@
+/* Info.css */
+
 .info-container {
     display: flex;
     flex-direction: column;
@@ -5,7 +7,9 @@
     padding: 20px;
     height: 100%;
     margin: 7%;
-
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .title-divider {
@@ -13,7 +17,6 @@
     height: 2px;
     background-color: #333;
     margin: 18px 0;
-
 }
 
 .info-content {
@@ -23,7 +26,6 @@
     width: 100%;
     max-width: 1200px;
     margin-bottom: 40px;
-
 }
 
 .fotoContainer {
@@ -32,6 +34,12 @@
 
 .linkedinFoto {
     height: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.linkedinFoto:hover {
+    transform: scale(1.1);
 }
 
 .info-left {
@@ -39,12 +47,19 @@
     text-align: center;
 }
 
+.info-left h1 {
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+}
+
 .info-right {
     flex: 2;
 }
 
 .info-right p {
-    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
     line-height: 1.6;
     color: #666;
 }
@@ -54,8 +69,9 @@
 }
 
 .tech-stack h2 {
-    font-size: 28px;
+    font-size: 2em;
     margin-bottom: 20px;
+    color: #333;
 }
 
 .tech-stack ul {
@@ -64,6 +80,15 @@
 }
 
 .tech-stack li {
-    font-size: 24px;
+    font-size: 1.5em;
     margin-bottom: 15px;
+    color: #666;
+}
+
+/* Agregado un poco de estilo general */
+
+body {
+    background-color: #e0e0e0;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }

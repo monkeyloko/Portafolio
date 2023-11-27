@@ -16,7 +16,6 @@ const Home = () => {
           <h1 className="heading">
             Santiago Doff
           </h1>
-          <p className="subheading">Desarrollador Front-end</p>
         </div>
       </div>
       <div className='home2'>
@@ -35,7 +34,6 @@ const Home = () => {
             </div>
           ))}</div>
       </div>
-      <div className='home3'></div>
     </>
   );
 };
